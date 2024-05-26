@@ -15,7 +15,7 @@ pnpm run dep
 
 3. 详细命令请查看`package.json`
 
-配置文件为：`taze.config.ts`
+    配置文件为：`taze.config.ts`
 
 # 开发规范
 1. 编写Vue组件时，请勿手动引入任何库，即不要手写`import xxx from "xxx"`，如果需要引入新的库，请在`vite.config.ts`中配置。
@@ -29,4 +29,8 @@ pnpm run dep
 3. 样式使用UnoCSS编写，不到万不得已的情况下，尽量不要在组件中编写`<style>`标签。
 
     UnoCSS官方文档：[https://unocss.dev/](https://unocss.dev/)
+
     配置文件：`uno.config.ts`
+
+4. 项目集成了Vue实用开发库: VueUse，尽量使用，里面封装了很多方便易用的工具。
+    文档：[https://vueuse.org/](https://vueuse.org/)
