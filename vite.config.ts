@@ -18,7 +18,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   plugins: [
@@ -41,8 +41,7 @@ export default defineConfig({
         '@vueuse/core',
         VueRouterAutoImports,
         {
-          // add any other imports you were relying on
-          'vue-router/auto': ['useLink'],
+          'vue-router/auto': ['useLink']
         },
       ],
       dts: true,
