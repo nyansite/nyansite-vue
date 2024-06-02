@@ -19,8 +19,12 @@ export default defineConfig({
       ([_, r, g, b, a]) => ({ "background-color": `rgba(${r}, ${g}, ${b}, ${a})` })
     ],
     [
-      /^color-([a-z]+)/,
+      /^color-([a-z]+)$/,
       (_, color) => ({ "background-color": `${color}` })
+    ],
+    [
+      /^rgbacolor-([\.\d]+)-([\.\d]+)-([\.\d]+)-([\.\d]+)$/,
+      ([_, r, g, b, a]) => ({ "color": `rgba(${r}, ${g}, ${b}, ${a})` })
     ],
   ],
   presets: [

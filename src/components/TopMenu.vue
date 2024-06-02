@@ -4,8 +4,11 @@
         <div i-carbon-moon top-menu-icon hover:rotate-45 v-if="isDark" @click="() => toggleDark()"/>
         <div i-carbon-sun top-menu-icon hover:rotate-45 v-else @click="() => toggleDark()"/>
         <div i-carbon-search top-menu-icon hover:rotate-45/>
-        <div i-carbon-menu top-menu-icon/>
-        <h1 m-inline-2 top-menu-icon>头像</h1>
+        <div i-carbon-menu top-menu-icon />
+        <!-- 头像，未登录则显示登录按钮 -->
+        <button bg-white text-pink-6 p-inline-3 m-inline-2 border-rd-2
+            hover:bg-blue hover:text-white
+        >登录</button>
     </div>
 </template>
 
