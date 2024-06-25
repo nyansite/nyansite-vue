@@ -8,11 +8,12 @@
         <!-- 头像，未登录则显示登录按钮 -->
         <button bg-white text-pink-6 p-inline-3 m-inline-2 border-rd-2
             hover:bg-blue hover:text-white
+            @click="router.push('/login')"
         >登录</button>
     </div>
 </template>
 
 <script setup lang="ts" name="TopMenu">
-
+const router = useRouter()
 
 </script>
