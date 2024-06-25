@@ -22,5 +22,5 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "exclude": ["demo/dist", "node_modules"]
+  "exclude": ["dist", "node_modules"]
 }
