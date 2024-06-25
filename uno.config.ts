@@ -20,7 +20,7 @@ export default defineConfig({
     ],
     [
       /^color-([a-z]+)$/,
-      (_, color) => ({ "background-color": `${color}` })
+      ([_, color]) => ({ color: `${color}` })
     ],
     [
       /^rgbacolor-([\.\d]+)-([\.\d]+)-([\.\d]+)-([\.\d]+)$/,
