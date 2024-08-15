@@ -26,7 +26,7 @@ pnpm run dep
 
     插件项目地址：[https://github.com/posva/unplugin-vue-router](https://github.com/posva/unplugin-vue-router)
 
-3. 样式使用UnoCSS编写，不到万不得已的情况下，尽量不要在组件中编写`<style>`标签。
+3. 样式使用UnoCSS编写，可以和`<style>`标签结合使用，**不要写内联样式！！！**。
 
     UnoCSS官方文档：[https://unocss.dev/](https://unocss.dev/)
 
